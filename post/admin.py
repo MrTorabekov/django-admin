@@ -16,11 +16,3 @@ class PostAdmin(admin.ModelAdmin):
                     </a>'''
         )
 
-    def img(self, obj):
-        return format_html(
-            f'''<a href="{obj.photo.url}" target="_blank">
-                          <img src="{obj.photo.url}" alt="image" width="150" height="100"
-                               style="object-fit: cover;"/>
-                      </a>'''
-        )
-
